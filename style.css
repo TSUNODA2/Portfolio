@@ -16,6 +16,7 @@ html {
     background-repeat: no-repeat;
 }
 /*end bodys*/
+
 /*end main*/
 
 /*header*/
@@ -144,3 +145,69 @@ hr {
 }
 
 /*END TECHNO PAGE*/
+
+/*Mes projets*/
+
+/*body*/
+.Projets {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./picture/back\ mclaren.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+/*end body*/
+
+/*cases*/
+
+.cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.FirstCase {
+    display: flex;
+    column-gap: 300px;
+}
+
+.FirstCase h4, .secondsCase h4 {
+    font-size: x-large;
+    color: white;
+}
+
+.firstCases, .secondCases, .thirdCases, .fourthCases {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    border: solid white 1.5px;
+    border-radius: 30px;
+}
+
+.secondsCase {
+    display: flex;
+    margin-top: 100px;
+    column-gap: 900px;
+}
+/*end cases*/
+/*end Mes projets*/
+
+/*Contact*/
+
+/*header Contact*/
+
+
+/*end header Contact*/
+.ContactNav {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./picture/back\ mclaren.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+/*end Contact*/
