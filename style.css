@@ -1,0 +1,146 @@
+/*ACCEUIL PAGE*/
+
+/*main*/
+html {
+    font-family: 'Arvo', serif;
+}
+/*bodys*/
+.Acceuil {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./picture/mclaren.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*end bodys*/
+/*end main*/
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 99.5vw;
+}
+.Name {
+     color: white;
+
+}
+ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+li {
+    font-size: x-large;
+    color: white;
+    display: flex;
+}
+.HeaderButton {
+    background: none;
+    cursor: pointer;
+}
+/*end header*/
+/*main*/
+.Title {
+    display: flex;
+    margin-bottom: 100px;
+    align-self: center;
+    font-size: x-large;
+    flex-direction: column;
+    color: white;
+}
+.Title h1 {
+    align-self: center;
+    margin: 0;
+}
+hr {
+    width: 180px;
+}
+.Presentation {
+    display: flex;
+    color: white;
+    font-size: x-large;
+}
+/*end main*/
+
+/*button CV*/
+.ButtonCV {
+    display: flex;
+}
+.ButtonCV button {
+    background: none;
+    border: solid white 1.5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.ButtonCV h1 {
+    color: white;
+}
+/*end button CV*/
+/*END ACCEUIL PAGE*/
+
+/*TECHNO PAGE*/
+
+/*techno body*/
+.Technologies {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./picture/mclaren2.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+/*end techno body*/
+.TechnoCase {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;  
+    column-gap: 20%;
+}
+.languages, .logiciel {
+    display: flex;
+    font-size: x-large;
+    flex-direction: column;
+    width: 30%;
+    color: white;
+}
+.languages hr, .logiciel hr{
+    font-size: x-large;
+    margin: 0;
+    width: 80%;
+}
+.firstImg {
+    display: flex;
+    column-gap: 30%;
+    align-items: center;
+}
+.secondImg {
+    display: flex;
+    column-gap: 30%;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 20px;
+}
+.secondImg img{
+    margin-right: 20px;
+}
+.thirdImg {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+.fourImg {
+    display: flex;
+    margin-top: 5%;
+    column-gap: 35%;
+} 
+.fiveImg {
+    display: flex;
+   margin-top: 30%;
+   column-gap: 35%;
+}
+
+/*END TECHNO PAGE*/
