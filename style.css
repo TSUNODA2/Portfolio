@@ -30,10 +30,18 @@ header {
      color: white;
 
 }
+span{
+    opacity: 0;
+    transition: all 0.2s ease;
+    letter-spacing: 2px;
+}
+span.fade {
+    opacity: 1;
+}
 ul {
     display: flex;
     width: 30%;
-    justify-content: space-between;
+    column-gap: 50px;
 }
 li {
     font-size: x-large;
@@ -42,7 +50,13 @@ li {
 }
 .HeaderButton {
     background: none;
+    border-radius: 30px;
     cursor: pointer;
+    border: solid 1px white;
+}
+.HeaderButton:hover {
+    border: solid white 2px;
+    border-top: none;
 }
 /*end header*/
 /*main*/
@@ -69,17 +83,17 @@ hr {
 /*end main*/
 
 /*button CV*/
-.ButtonCV {
-    display: flex;
-}
 .ButtonCV button {
     background: none;
     border: solid white 1.5px;
     border-radius: 30px;
-    cursor: pointer;
+    cursor: pointer
 }
 .ButtonCV h1 {
     color: white;
+}
+.Consult {
+    text-decoration: none;
 }
 /*end button CV*/
 /*END ACCEUIL PAGE*/
