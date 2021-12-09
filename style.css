@@ -5,15 +5,21 @@ html {
     font-family: 'Arvo', serif;
 }
 /*bodys*/
-.Acceuil {
+#Accueil {
     display: flex;
-    height: 75vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-image: url(./picture/mclaren.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+@media screen and (max-width: 1380px) {
+    #Accueil {
+      background-image: url(./picture/thumb-1920-935209.jpg);
+      height: 93vh;
+    }
+    .Title
 }
 /*end bodys*/
 
@@ -28,7 +34,6 @@ header {
 }
 .Name {
      color: white;
-
 }
 span{
     opacity: 0;
@@ -38,15 +43,10 @@ span{
 span.fade {
     opacity: 1;
 }
-ul {
+.casesHeader {
     display: flex;
     width: 30%;
     column-gap: 50px;
-}
-li {
-    font-size: x-large;
-    color: white;
-    display: flex;
 }
 .HeaderButton {
     background: none;
@@ -54,15 +54,72 @@ li {
     cursor: pointer;
     border: solid 1px white;
 }
+.HeaderButton a {
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
 .HeaderButton:hover {
     border: solid white 2px;
     border-top: none;
+}
+.HeaderButton:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px white;
+}
+.navResposiv {
+    display: flex;
+    align-items: center;
+}
+.burgerButton, .burgerButtonClose {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .casesHeader {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 40%; 
+    }
+    .HeaderButton {
+        margin-top: 15%;
+    }
+    .open .casesHeader {
+        display: block;
+        padding: 0;
+        margin-top: 70%;
+    }
+    .burgerButton  {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .burgerButtonClose {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .open .burgerButton {
+      display: none;
+    }
+    .open .burgerButtonClose {
+        display: block;
+    }
+    .open .Title {
+        margin-top: 60%;
+        margin-bottom: 0;
+    }
+
 }
 /*end header*/
 /*main*/
 .Title {
     display: flex;
-    margin-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 10px;
     align-self: center;
     font-size: x-large;
     flex-direction: column;
@@ -92,11 +149,20 @@ hr {
 .ButtonCV h1 {
     color: white;
 }
+.ButtonCV:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+    border-radius: 30px;
+}
+.ButtonCV:active {
+    transform: translateY(5px);
+    border-bottom: 3px solid white;
+}
 .Consult {
     text-decoration: none;
 }
 /*end button CV*/
-/*END ACCEUIL PAGE*/
+/*END Accueil PAGE*/
 
 /*TECHNO PAGE*/
 
@@ -114,6 +180,28 @@ hr {
     margin-top: 5%;
     justify-content: center;  
     column-gap: 20%;
+}
+@media screen and (max-width: 780px) {
+    .TechnoCase {
+        display: flex;
+        flex-direction: column;
+    }
+    .logiciel, .languages {
+        margin-top: 100px;
+    }
+    .fiveImg {
+        width: 270px;
+        margin-left: 20px;
+    }
+    .fourImg {
+        margin-left: 35px;
+    }
+    .fiveImg img {
+        width: 90px;
+    }
+    .fourImg img {
+        width: 100px;
+    }
 }
 .languages, .logiciel {
     display: flex;
@@ -155,7 +243,7 @@ hr {
 .fiveImg {
     display: flex;
    margin-top: 30%;
-   column-gap: 35%;
+   column-gap: 40%;
 }
 
 /*END TECHNO PAGE*/
@@ -168,13 +256,17 @@ hr {
     flex-direction: column;
     background-image: url(./picture/back\ mclaren.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*end body*/
 
 /*cases*/
+.main{
+    display: flex;
+}
 
-.cases {
+.fistcases, .secCases {
     display: flex;
     margin-top: 10%;
     justify-content: space-around;
@@ -182,18 +274,32 @@ hr {
     align-items: center;
     width: 100%;
 }
+.secCases {
+    display: flex;
+
+}
 
 .FirstCase {
     display: flex;
     column-gap: 300px;
 }
+.firstCases:hover, .secondCases:hover, .thirdCases:hover, .fourthCases:hover {
+    zoom: 105%;
+    box-shadow: 2px 2px 5px 5px white;
+    border-radius: 30px;
+    transition-duration: .4s;
+}
+.firstCases:active, .secondCases:active, .thirdCases:active, .fourthCases:active {
+    border: 3px solid white;
+    border-radius: 30px;
+}
 
-.cases h4 {
+.fistcases h4, .secCases h4 {
     font-size: x-large;
     color: white;
     margin: 7%;
 }
-.cases img {
+.fistcases img, .secCases img {
     margin-top: 20px;
 }
 
@@ -213,6 +319,17 @@ hr {
     margin-top: 100px;
     column-gap: 900px;
 }
+
+@media screen and (max-width: 780px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .firstCases a, .secondCases a, .thirdCases a, .fourthCases a {
+         width: 200px;
+     } 
+    
+}
 /*end cases*/
 /*end Mes projets*/
 
@@ -220,13 +337,6 @@ hr {
 
 /*header Contact*/
 
-.ContactNav {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./picture/back\ mclaren.jpg);
-    background-size: cover;
-    height: 90vh;
-}
 .ContactBack {
     background-image: url(./picture/f&paddok.jpg);
     background-size: cover;
@@ -253,18 +363,34 @@ hr {
     align-items: center;
     justify-content: center;
 }
-.email {
+.firstCont {
     display: flex;
-    justify-content: center;
-    column-gap: 10%;
-    width: 100%;
+    justify-content: flex-end;
+    padding: 0 80px;
+    column-gap: 20%;
+    width: 50%;
     margin-top: 6%;
 }
-.email button {
-    background: none;
-    border: solid white 1.5px;
-    border-radius: 30px;
-    cursor: pointer;
+.secCont {
+   display: flex;
+   padding: 0 80px;
+   justify-content: flex-start;
+   column-gap: 20%;
+   width: 50%;
+   margin-top: 6%;
 }
+.firstCont a:hover, .secCont a:hover {
+    border: 3px solid white;
+    border-radius: 30px;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width: 780px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*Case Contact*/
-/*end Contact*/
+/*end Contact*/ 

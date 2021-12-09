@@ -20,32 +20,15 @@ function onTick(){
     }
 }
 
-
-
-
-const pres = document.querySelector('.Presentation');
-const testPres = pres.textContent;
-const presSplit = testPres.split("");
-pres.textContent = "";
-
-for(let f=0; f < presSplit.length; f++){
-    pres.innerHTML += "<span>"+ presSplit[f] + "</span>"
-}
-  
-let chars = 0;
-let timers = setInterval(onTicks, 50);
-
-function onTicks(){
-    const span = pres.querySelectorAll('span')[chars];
-    span.classList.add('fade');
-    chars++
-    if(chars === presSplit.length){
-        complete();
-        return;
-    }
-}
-
 function complete(){ 
 clearInterval(timer);
 timer = null;
 }
+
+let barRes = document.querySelector('.navResposiv');
+let bodyAccueil = document.querySelector('body');
+
+barRes.addEventListener('click', function(){
+    bodyAccueil.classList.toggle('open');
+    
+})
