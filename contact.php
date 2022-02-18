@@ -10,15 +10,19 @@
 <body class="ContactBack">
       <!--nav bar-->    
       <header>
-      <h1 class="Name">SAMI LEBNOUJ</h1>
-      <ul class="casesHeader">
-        <li class="HeaderButton"><a href="./index.html">accueil</a> </li>
-        <li class="HeaderButton"><a href="./Techno.html">Technologies</a></li>
-        <li class="HeaderButton"><a href="./Projets.html">projets</a></li>
-        <li class="HeaderButton"><a href="./Contact.html">Contact</a></li>
-    </ul>
-    <button class="burgerButton"></button>
- </header>
+        <h1 class="Name">SAMI LEBNOUJ</h1>
+        <ul class="casesHeader">
+            <li class="HeaderButton"><a href="index.php">accueil</a> </li>
+            <li class="HeaderButton"><a href="Techno.php">Techno</a></li>
+            <li class="HeaderButton"><a href="Projet.php">projets</a></li>
+            <li class="HeaderButton"><a href="Contact.php">Contact</a></li>
+        </ul>
+        <ul class="navResposiv">
+            <li><button class="burgerButton"><img src="./picture/outline_menu_white_36dp.png" width="40px" alt="Menu button"></button></li>
+            <li><button class="burgerButtonClose"><img src="./picture/outline_close_white_36dp.png" width="45px" alt="close button"></button></li>
+        </ul>
+
+    </header>
      <!-- end nav bar-->  
      <div class="textcontact">
      <h1>You can contact me ! <hr></h1>

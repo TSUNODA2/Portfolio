@@ -5,21 +5,31 @@ html {
     font-family: 'Arvo', serif;
 }
 /*bodys*/
-#Accueil {
+.Accueil {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     background-image: url(./picture/mclaren.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 98vh;
 }
-@media screen and (max-width: 1380px) {
-    #Accueil {
-      background-image: url(./picture/thumb-1920-935209.jpg);
-      height: 93vh;
-    }
-    .Title
+
+.main-accueil{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none; 
+    padding-left: 2%;
+    width: 95%;
+    height: 75.4vh;
 }
 /*end bodys*/
 
@@ -51,12 +61,14 @@ span.fade {
 .HeaderButton {
     background: none;
     border-radius: 30px;
+    list-style: none;
     cursor: pointer;
     border: solid 1px white;
 }
 .HeaderButton a {
     font-size: x-large;
     color: white;
+    list-style: none;
     text-decoration: none;
     margin: 20px;
 }
@@ -70,6 +82,7 @@ span.fade {
 }
 .navResposiv {
     display: flex;
+    list-style: none;
     align-items: center;
 }
 .burgerButton, .burgerButtonClose {
@@ -115,6 +128,7 @@ span.fade {
 
 }
 /*end header*/
+
 /*main*/
 .Title {
     display: flex;
@@ -135,6 +149,7 @@ hr {
 .Presentation {
     display: flex;
     color: white;
+    margin: 0;
     font-size: x-large;
 }
 /*end main*/
@@ -182,8 +197,12 @@ hr {
     column-gap: 20%;
 }
 @media screen and (max-width: 780px) {
+    .open .TechnoCase{
+        margin-top: 50%;
+    }
     .TechnoCase {
         display: flex;
+        margin-left: 15%;
         flex-direction: column;
     }
     .logiciel, .languages {
@@ -257,13 +276,15 @@ hr {
     background-image: url(./picture/back\ mclaren.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 97vh;
 }
 
 /*end body*/
 
 /*cases*/
-.main{
+.projet{
     display: flex;
+    margin-top: 5%;
 }
 
 .fistcases, .secCases {
@@ -272,7 +293,7 @@ hr {
     justify-content: space-around;
     align-self: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 .secCases {
     display: flex;
@@ -320,10 +341,16 @@ hr {
     column-gap: 900px;
 }
 
-@media screen and (max-width: 780px) {
-    .main {
+@media screen and (max-width: 980px) {
+    .open .projet{
+        margin-top: 50%;
+    }
+    .projet {
         display: flex;
         flex-direction: column;
+    }
+    .fistcases{
+        margin-bottom: 15%;
     }
     .firstCases a, .secondCases a, .thirdCases a, .fourthCases a {
          width: 200px;
@@ -338,9 +365,10 @@ hr {
 /*header Contact*/
 
 .ContactBack {
-    background-image: url(./picture/f&paddok.jpg);
+    background-image: url(./picture/f1paddok.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 96.5vh;
 }
 
 /*end header Contact*/
@@ -361,7 +389,7 @@ hr {
 .contact {
     display: flex;
     align-items: center;
-    justify-content: center;
+
 }
 .firstCont {
     display: flex;
@@ -386,11 +414,22 @@ hr {
 }
 
 @media screen and (max-width: 780px) {
+    .open .textcontact {
+        margin-top: 50%;
+    }
     .contact {
         display: flex;
         flex-direction: column;
     }
+    .firstCont{
+        margin-top: 15%;
+    }
+    .secCont {
+        margin-top: 20%;
+        margin-right: 8%;
+    }
 }
 
 /*Case Contact*/
+
 /*end Contact*/ 
