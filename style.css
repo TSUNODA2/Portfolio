@@ -12,7 +12,8 @@ html {
     background-image: url(./picture/mclaren.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 98vh;
+    height: 100vh;
+    margin: 0;
 }
 
 .main-accueil{
@@ -122,7 +123,7 @@ span.fade {
         display: block;
     }
     .open .Title {
-        margin-top: 60%;
+        margin-top: 70%;
         margin-bottom: 0;
     }
 
@@ -151,6 +152,8 @@ hr {
     color: white;
     margin: 0;
     font-size: x-large;
+    word-spacing: 5px;
+    text-align: center;
 }
 /*end main*/
 
@@ -198,7 +201,10 @@ hr {
 }
 @media screen and (max-width: 780px) {
     .open .TechnoCase{
-        margin-top: 50%;
+        margin-top: 60%;
+    }
+    .open .ButtonCV {
+        margin-top: 15%;
     }
     .TechnoCase {
         display: flex;
@@ -225,34 +231,31 @@ hr {
 .languages, .logiciel {
     display: flex;
     font-size: x-large;
+    width: 20%;
     flex-direction: column;
-    width: 30%;
     color: white;
 }
-.languages hr, .logiciel hr{
+.languages hr {
     font-size: x-large;
     margin: 0;
-    width: 80%;
+    width: 225px;
 }
-.firstImg {
+.logiciel hr {
+    font-size: x-large;
+    margin: 0;
+    width: 170px;
+}
+.languageImg {
+    list-style: none;
     display: flex;
-    column-gap: 30%;
+    padding: 0;
     align-items: center;
+    flex-wrap: wrap;
 }
-.secondImg {
+.languageImg li {
+    padding: 5%;
     display: flex;
-    column-gap: 30%;
     align-items: center;
-    margin-top: 5%;
-    margin-left: 20px;
-}
-.secondImg img{
-    margin-right: 20px;
-}
-.thirdImg {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-top: 10%;
 }
 .fourImg {
     display: flex;
