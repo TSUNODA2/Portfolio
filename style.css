@@ -41,7 +41,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 99.5vw;
+    width: 90vw;
 }
 .Name {
      color: white;
@@ -124,7 +124,6 @@ span.fade {
     }
     .open .Title {
         margin-top: 70%;
-        margin-bottom: 0;
     }
 
 }
@@ -190,29 +189,32 @@ hr {
     flex-direction: column;
     background-image: url(./picture/mclaren2.jpg);
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
+    margin: 0;
 }
 /*end techno body*/
 .TechnoCase {
     display: flex;
     margin-top: 5%;
     justify-content: center;  
-    column-gap: 20%;
+    column-gap: 30%;
 }
 @media screen and (max-width: 780px) {
     .open .TechnoCase{
-        margin-top: 60%;
+        margin-top: 30%;
     }
     .open .ButtonCV {
         margin-top: 15%;
     }
     .TechnoCase {
         display: flex;
-        margin-left: 15%;
+        align-items: center;
         flex-direction: column;
     }
     .logiciel, .languages {
         margin-top: 100px;
+        display: flex;
+        align-items: center;
     }
     .fiveImg {
         width: 270px;
@@ -230,6 +232,7 @@ hr {
 }
 .languages, .logiciel {
     display: flex;
+    align-items: center;
     font-size: x-large;
     width: 20%;
     flex-direction: column;
@@ -249,13 +252,12 @@ hr {
     list-style: none;
     display: flex;
     padding: 0;
+    column-gap: 20%;
     align-items: center;
     flex-wrap: wrap;
 }
-.languageImg li {
-    padding: 5%;
-    display: flex;
-    align-items: center;
+.language-logo{
+    margin-right: 20%;
 }
 .fourImg {
     display: flex;
@@ -279,7 +281,8 @@ hr {
     background-image: url(./picture/back\ mclaren.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 97vh;
+    height: 98.1vh;
+    margin: 0;
 }
 
 /*end body*/
@@ -298,9 +301,9 @@ hr {
     align-items: center;
     width: 90%;
 }
+
 .secCases {
     display: flex;
-
 }
 
 .FirstCase {
@@ -344,7 +347,7 @@ hr {
     column-gap: 900px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1167px) {
     .open .projet{
         margin-top: 50%;
     }
@@ -396,6 +399,8 @@ hr {
 }
 .firstCont {
     display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: flex-end;
     padding: 0 80px;
     column-gap: 20%;

@@ -15,7 +15,7 @@
             <li class="HeaderButton"><a href="index.html">accueil</a> </li>
             <li class="HeaderButton"><a href="Techno.html">Techno</a></li>
             <li class="HeaderButton"><a href="Projet.html">projets</a></li>
-            <li class="HeaderButton"><a href="Contact.html">Contact</a></li>
+            <li class="HeaderButton"><a href="Contact.php">Contact</a></li>
         </ul>
         <ul class="navResposiv">
             <li><button class="burgerButton"><img src="./picture/outline_menu_white_36dp.png" width="40px" alt="Menu button"></button></li>
@@ -28,14 +28,16 @@
      <h1>You can contact me ! <hr></h1>
     </div>
     <div class="contact">
-        <div class="firstCont">
-            <a href="mailto:sami.lebnouj95500@gmail.com"><img src="./picture/email.png" width="110px" alt="Email Contact Logo"></a>
-            <a href="https://github.com/TSUNODA2"><img src="./picture/GitHub-Mark-64px.png" width="95px" alt="Git hub Contact Logo"></a>
-           </div>
-           <div class="secCont">
-            <a href="tel:(+33)(660972918)"><img src="./picture/phone.png" width="110px" alt="Phone Contact Logo"></a>
-            <a href="https://www.linkedin.com/in/sami-lebnouj-520880224/"><img src="./picture/linkedin White.png" width="110px" alt="LinkIn Logo"></a>
-        </div>
+
+        <ul class="firstCont">
+
+            <li><a href="mailto:sami.lebnouj95500@gmail.com"><img src="./picture/email.png" width="110px" alt="Email Contact Logo"></a></li>
+            <li><a href="https://github.com/TSUNODA2"><img src="./picture/GitHub-Mark-64px.png" width="95px" alt="Git hub Contact Logo"></a></li>
+            <li><a href="tel:(+33)(660972918)"><img src="./picture/phone.png" width="110px" alt="Phone Contact Logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/sami-lebnouj-520880224/"><img src="./picture/linkedin White.png" width="110px" alt="LinkIn Logo"></a></li>
+        
+        </ul>
+
     </div>
     <script src="./app.js"></script>
 </body>
