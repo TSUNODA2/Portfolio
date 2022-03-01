@@ -31,10 +31,10 @@
 
         <ul class="firstCont">
 
-            <li><a href="mailto:sami.lebnouj95500@gmail.com"><img src="./picture/email.png" width="110px" alt="Email Contact Logo"></a></li>
-            <li><a href="https://github.com/TSUNODA2"><img src="./picture/GitHub-Mark-64px.png" width="95px" alt="Git hub Contact Logo"></a></li>
-            <li><a href="tel:(+33)(660972918)"><img src="./picture/phone.png" width="110px" alt="Phone Contact Logo"></a></li>
-            <li><a href="https://www.linkedin.com/in/sami-lebnouj-520880224/"><img src="./picture/linkedin White.png" width="110px" alt="LinkIn Logo"></a></li>
+            <li class="box_cont"><a href="mailto:sami.lebnouj95500@gmail.com"><img src="./picture/email.png" width="110px" alt="Email Contact Logo"></a></li>
+            <li class="box_cont"><a href="https://github.com/TSUNODA2"><img src="./picture/GitHub-Mark-64px.png" width="95px" alt="Git hub Contact Logo"></a></li>
+            <li class="box_cont"><a href="tel:(+33)(660972918)"><img src="./picture/phone.png" width="110px" alt="Phone Contact Logo"></a></li>
+            <li class="box_cont"><a href="https://www.linkedin.com/in/sami-lebnouj-520880224/"><img src="./picture/linkedin White.png" width="110px" alt="LinkIn Logo"></a></li>
         
         </ul>
 
